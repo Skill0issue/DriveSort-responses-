@@ -3,7 +3,8 @@
 This script is designed to automatically move files uploaded through a Google Form to specific folders in Google Drive based on user input. It uses Google Apps Script, a cloud-based scripting language, to interact with the Google Drive API.
 
 ## Setup
-
+This setup is set for a form with 'l'th question with 2 options A,B and 'k'th question with n options namely 'opton 1','option 2','option 3', ... and so on. Create the Folders inside the drive and name them exactly as they were in the form. If a user choses Option A regardless of kth response he gets sorted to folder/option_A but if he chooses option B he gets put into folder/option_B/option_2 and so on. 
+  
 1. Create a Google Form and add the necessary fields for file uploads, along with the other required fields.
 2. Open the script editor by going to "Script editor" from the "..." menu in Google Forms.
 3. Replace the default code in the script editor with the provided `onFormSubmit` function.
